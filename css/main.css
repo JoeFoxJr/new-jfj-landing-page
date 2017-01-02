@@ -12,3 +12,11 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+#top-nav-bar {
+  background-color: #112233;
+  color: #F0F1F5;
+  width:100%;
+  position: fixed;
+  top: 0;
+}
