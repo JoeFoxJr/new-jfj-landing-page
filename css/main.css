@@ -9,6 +9,7 @@
 /* ********** body ********** */
 body {
   font-family: 'Raleway', sans-serif;
+  color: #112233;
 
   margin: 0px;
   padding: 0px;
@@ -24,6 +25,10 @@ a:hover {
   color: inherit;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
 /* ********** top nav bar ********** */
 #top-nav-bar {
   width:100%;
@@ -37,6 +42,7 @@ a:hover {
 
   background-color: #F0F1F5;
   color: #112233;
+  transition: 0.5s ease;
 }
 
 #top-nav-bar.scrolled {
@@ -57,6 +63,14 @@ a:hover {
 #top-nav-bar-home-button {
   display: inline-block;
   float: left;
+  height: 46px;
+  width: 46px;
+  background-image: url('../img/JFJ_favicon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid #112233;
+  border-radius: 10px
 }
 
 .top-nav-bar-item {
@@ -69,14 +83,44 @@ a:hover {
   margin-right: 4px;
 }
 
+.top-nav-bar-item:hover {
+  color: #66CC99;
+}
+
 /* ********** main title ********** */
 #main-title {
+  padding-top: 100px;
+  background-color: #F0F1F5;
+  text-align: center;
+}
+
+#main-title-headshot {
+  height:500px;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#main-title-headshot:hover {
+  -webkit-animation:spin 20s linear infinite;
+  -moz-animation:spin 20s linear infinite;
+  animation:spin 20s linear infinite;
+}
+
+#main-title-header {
+  font-size: 85px;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.link-bar {
 
 }
 
-
-
-
+.link-bar-item {
+  display: inline-block;
+}
 
 
 
@@ -106,36 +150,40 @@ a:hover {
 .footer-item {
   display: inline-block;
   float: right;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: 4px;
   margin-right: 4px;
   font-size: 30px;
+  width: 56px;
 }
 
 #footer-strava {
   height: 30px;
   width: 30px;
   margin-top: 24px;
-  background-image: url('../img/brand-icons/strava-icon-white-on-blue.svg');
+  margin-left: 17px;
+  margin-right: 17px;
+  background-repeat: no-repeat;
+  background-image: url('../img/brand-icons/strava-icon-grey-on-blue.svg');
 }
 
 #footer-strava:hover {
   background-image: url('../img/brand-icons/strava-icon-orange-on-blue.svg');
 }
 
-#footer-linkedin:hover {
+.fa-linkedin:hover {
   color: #0077b5;
 }
 
-#footer-instagram:hover {
+.fa-instagram:hover {
   color: #e1306c;
 }
-#footer-twitter:hover {
+
+.fa-twitter:hover {
   color: #1da1f2;
 }
-#footer-github:hover {
-  color: #4078c0;
+
+.fa-github:hover {
+  color: #6cc644;
 }
 
 
