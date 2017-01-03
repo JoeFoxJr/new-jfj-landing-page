@@ -10,7 +10,6 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #112233;
-  min-width: 600px;
   margin: 0px;
   padding: 0px;
 }
@@ -32,7 +31,6 @@ a:hover {
 /* ********** top nav bar ********** */
 #top-nav-bar {
   width:100%;
-  min-width: 600px;
   height: 50px;
   position: fixed;
   top: 0;
