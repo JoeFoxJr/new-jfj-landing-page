@@ -10,7 +10,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #112233;
-
+  min-width: 600px;
   margin: 0px;
   padding: 0px;
 }
@@ -32,6 +32,7 @@ a:hover {
 /* ********** top nav bar ********** */
 #top-nav-bar {
   width:100%;
+  min-width: 600px;
   height: 50px;
   position: fixed;
   top: 0;
@@ -40,13 +41,13 @@ a:hover {
   line-height: 50px;
   text-align: center;
 
-  background-color: #F0F1F5;
-  color: #112233;
+  background-color: #66CC99;
+  color: #F0F1F5;
   transition: 0.5s ease;
 }
 
 #top-nav-bar.scrolled {
-  background-color: #112233;
+  background-color: #44BBFF;
   color: #F0F1F5;
 }
 
@@ -69,7 +70,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  border: 2px solid #112233;
+  /*border: 2px solid #44BBFF;*/
   border-radius: 10px
 }
 
@@ -90,15 +91,18 @@ a:hover {
 /* ********** main title ********** */
 #main-title {
   padding-top: 100px;
-  background-color: #F0F1F5;
+  background-color: #66CC99;
+  color: #F0F1F5;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 #main-title-headshot {
   height:500px;
 }
 
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+/* spin effect on main-title-headshot
+/*@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
@@ -106,12 +110,18 @@ a:hover {
   -webkit-animation:spin 20s linear infinite;
   -moz-animation:spin 20s linear infinite;
   animation:spin 20s linear infinite;
-}
+}*/
 
 #main-title-header {
   font-size: 85px;
   display: inline-block;
   margin-top: 50px;
+}
+
+#main-title-header-description {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .link-bar {
@@ -122,7 +132,15 @@ a:hover {
   display: inline-block;
 }
 
+/* ********** panels ********** */
+.panel {
+  padding: 20px;
+  text-align: center;
+}
 
+.panel-title {
+  font-size: 50px;
+}
 
 /* ********** footer ********** */
 #footer {
