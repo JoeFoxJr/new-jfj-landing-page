@@ -106,12 +106,13 @@ a:hover {
 }
 
 #footer-strava {
-  height:30px;
-  background-image: url('/img/brand-icons/strava-icon-white-on-blue.svg');
+  height: 30px;
+  width: 30px;
+  background-image: url('../img/brand-icons/strava-icon-white-on-blue.svg');
 }
 
 #footer-strava:hover {
-  background-image: url('/img/brand-icons/strava-icon-orange-on-blue.svg');
+  background-image: url('../img/brand-icons/strava-icon-orange-on-blue.svg');
 }
 
 
