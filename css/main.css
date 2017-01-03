@@ -13,10 +13,106 @@ body {
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration:none;
+  color: inherit;
+}
+
+
 #top-nav-bar {
-  background-color: #112233;
-  color: #F0F1F5;
   width:100%;
+  height: 50px;
   position: fixed;
   top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 50px;
+  text-align: center;
+
+  background-color: #F0F1F5;
+  color: #112233;
 }
+
+#top-nav-bar.scrolled {
+  background-color: #112233;
+  color: #F0F1F5;
+}
+
+#top-nav-bar-left {
+  display: inline-block;
+  float: left;
+}
+
+#top-nav-bar-right {
+  display: inline-block;
+  float: right;
+}
+
+#top-nav-bar-home-button {
+  display: inline-block;
+  float: left;
+}
+
+.top-nav-bar-item {
+  display: inline-block;
+  float: right;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+
+
+
+
+#footer {
+  width: 100%;
+  height: 80px;
+  background-color: #112233;
+  color: #F0F1F5;
+  font-size: 18px;
+  line-height: 80px;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#footer-left {
+  display: inline-block;
+  float: left;
+}
+
+#footer-right {
+  display: inline-block;
+  float: right;
+}
+
+.footer-item {
+  display: inline-block;
+  float: right;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 30px;
+}
+
+#footer-strava {
+  height:30px;
+  background-image: url('/img/brand-icons/strava-icon-white-on-blue.svg');
+}
+
+#footer-strava:hover {
+  background-image: url('/img/brand-icons/strava-icon-orange-on-blue.svg');
+}
+
+
+
