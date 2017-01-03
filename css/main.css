@@ -81,13 +81,12 @@ a:hover {
   line-height: 80px;
   text-align: center;
   vertical-align: middle;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 #footer-left {
   display: inline-block;
   float: left;
+  padding-left: 10px;
 }
 
 #footer-right {
@@ -113,6 +112,20 @@ a:hover {
 
 #footer-strava:hover {
   background-image: url('../img/brand-icons/strava-icon-orange-on-blue.svg');
+}
+
+#footer-linkedin:hover {
+  color: #0077b5;
+}
+
+#footer-instagram:hover {
+  color: #e1306c;
+}
+#footer-twitter:hover {
+  color: #1da1f2;
+}
+#footer-github:hover {
+  color: #4078c0;
 }
 
 
