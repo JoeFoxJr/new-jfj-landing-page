@@ -301,11 +301,20 @@ a:hover {
 }
 
 #projects h2 {
-
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 40%;
 }
 
 #projects p {
+  display: inline-block;
+  vertical-align: middle;
   line-height: 1.5;
+  font-size: 15px;
+  height: 100%;
+  width: 50%;
+  text-align: justify;
 }
 
 #contact {
