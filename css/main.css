@@ -8,11 +8,17 @@
 
 /* ********** body ********** */
 body {
-  font-family: 'Raleway', sans-serif;
+/*  font-family: 'Raleway', sans-serif; */
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #112233;
   margin: 0px;
   padding: 0px;
 }
+
+/*  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Lora', serif;
+  font-family: 'Raleway', sans-serif;
+*/
 
 a {
   text-decoration: none;
@@ -43,8 +49,8 @@ a:hover {
   line-height: 50px;
   text-align: center;
 
-  background-color: #66CC99;
-  color: #F0F1F5;
+/*  background-color: #66CC99;
+  color: #F0F1F5;*/
   transition: 0.5s ease;
 }
 
@@ -120,63 +126,104 @@ a:hover {
 
 /* ********** main title ********** */
 #main-title {
-  padding-top: 50px;
-  background-color: #66CC99;
-  color: #F0F1F5;
+  padding-top: 0px;
+  background-color: #0;
+  background-image: url('../img/backgrounds/bike-handlebars.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   text-align: center;
   padding-bottom: 100px;
+  min-height: 700px;
+  height: 80vh;
 }
-
-#main-title-headshot {
-  height:50vw;
-  max-height: 500px;
-}
-
-/* spin effect on main-title-headshot
-/*@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-#main-title-headshot:hover {
-  -webkit-animation:spin 20s linear infinite;
-  -moz-animation:spin 20s linear infinite;
-  animation:spin 20s linear infinite;
-}*/
 
 #main-title-header {
   font-size: 85px;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  text-align: left;
+  width: 100vw;
+  max-width: 700px;
 }
 
-#main-title-header-description {
-  font-size: 20px;
+#main-title-description {
+  display: inline-block;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: left;
+  width: 100vw;
+  max-width: 700px;
 }
 
-.link-bar {
+#main-title-description p {
+  display: table;
+  border-radius: 14px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
 
+  transition: 0.2s ease;
+}
+
+#main-title-description p:hover {
+  color: white;
+  background-color: #44BBFF;; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #44BBFF , #80d0ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #44BBFF, #80d0ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #44BBFF, #80d0ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #44BBFF , #80d0ff); /* Standard syntax */
+}
+
+
+.link-bar {
+  display: table;
+  margin-left: auto;
+  margin-right: auto ;
+  font-size: 64px;
+  line-height: 84px;
+  border-radius: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  background-color: #44BBFF;; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #44BBFF , #66c7ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #44BBFF, #66c7ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #44BBFF, #66c7ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #44BBFF , #66c7ff); /* Standard syntax */
+
+  border: 1px solid red;
 }
 
 .link-bar-item {
   display: inline-block;
-}
-
-.link-bar-item img {
-  height: 64px;
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 80px;
 }
 
 /* ********** panels ********** */
 .panel {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 150px;
+  padding-bottom: 150px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
 .panel-title {
+  display: inline-block;
   font-size: 50px;
+  width: 100vw;
+  max-width: 700px;
+}
+
+.panel-contents {
+  display: inline-block;
+  width: 100vw;
+  max-width: 700px;
 }
 
 .panel-contents p {
@@ -269,8 +316,6 @@ a:hover {
   #top-nav-bar-dropdown-button {display:inline-block;}
 
   #footer-left {display: none;}
-
-  #main-title-header {font-size: 50px;}
 
 }
 
