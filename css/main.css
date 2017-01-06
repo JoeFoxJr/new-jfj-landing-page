@@ -75,12 +75,12 @@ a:hover {
   width: 40px;
   margin-left: 5px;
   margin-top: 5px;
-  background-image: url('../img/JFJ_favicon.png');
+  background-image: url('../img/favicon2hd.ico');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /*border: 2px solid #44BBFF;*/
-  border-radius: 10px
+  /*border: 2px solid #F0F1F5;*/
+  /*border-radius: 5px*/
 }
 
 .top-nav-bar-item {
@@ -160,6 +160,10 @@ a:hover {
 
 .link-bar-item {
   display: inline-block;
+}
+
+.link-bar-item img {
+  height: 64px;
 }
 
 /* ********** panels ********** */
