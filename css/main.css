@@ -282,9 +282,12 @@ a:hover {
 
 #about p {
   text-align: justify;
+/*  background-color: black;*/
+  color: white;
+/*  opacity: 0.5;*/
 }
 
-#about-panel-contents-fader {
+/*#about-panel-contents-fader {
   position: absolute;
   top: 0;
   left: 0;
@@ -292,7 +295,7 @@ a:hover {
   height: 100%;
   background-color: black;
   opacity: 0.5;
-}
+}*/
 
 #projects {
   background-color: #F0F1F5;
@@ -318,7 +321,7 @@ a:hover {
 }
 
 #contact {
-  background-image: url('../img/backgrounds/mailboxes.jpg');
+  background-image: url('../img/backgrounds/mailboxes-small.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
