@@ -227,6 +227,7 @@ a:hover {
   border: 1px solid #44BBFF;
   border-radius: 32px;
   background-color: white;
+  color: #44BBFF;
 }
 
 /* ********** panels ********** */
@@ -297,6 +298,14 @@ a:hover {
   background-color: #F0F1F5;
   height: 100vh;
   min-height: 600px;
+}
+
+#projects h2 {
+
+}
+
+#projects p {
+  line-height: 1.5;
 }
 
 #contact {
