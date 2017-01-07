@@ -1,6 +1,10 @@
 
 $(document).ready(function() {
 
+  // add horiz rule to each panel title
+  jQuery(".panel-title").append("<hr />");
+
+
   // Add class to #top-nav-bar upon scrolling
   $(window).scroll(function() {
 
