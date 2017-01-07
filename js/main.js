@@ -6,6 +6,7 @@ $(document).ready(function() {
 
 
   // Add class to #top-nav-bar upon scrolling
+  // Note: I need to execute this on window.load, resize, or scroll
   $(window).scroll(function() {
 
     if ($(window).scrollTop() > 1) {
