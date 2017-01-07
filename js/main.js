@@ -7,24 +7,50 @@ $(document).ready(function() {
 
   // Add class to #top-nav-bar upon scrolling
   // Note: I need to execute this on window.load, resize, or scroll
+  // $(window).scroll(function() {
+
+  //   if ($(window).scrollTop() > 1) {
+  //     $('#top-nav-bar').addClass('scrolled-mid');
+  //     $('#top-link-bar').addClass('scrolled-mid');
+  //   } else {
+  //     $('#top-nav-bar').removeClass('scrolled-mid');
+  //     $('#top-link-bar').removeClass('scrolled-mid');
+  //   };
+
+  //   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+  //     $('#top-nav-bar').addClass('scrolled-bottom');
+  //     $('#top-nav-bar').removeClass('scrolled-mid');
+  //   } else {
+  //     $('#top-nav-bar').removeClass('scrolled-bottom');
+  //   };
+
+  // });
+
+
   $(window).scroll(function() {
-
-    if ($(window).scrollTop() > 1) {
-      $('#top-nav-bar').addClass('scrolled-mid');
-      $('#top-link-bar').addClass('scrolled-mid');
-    } else {
-      $('#top-nav-bar').removeClass('scrolled-mid');
-      $('#top-link-bar').removeClass('scrolled-mid');
-    };
-
     if($(window).scrollTop() + $(window).height() == $(document).height()) {
-      $('#top-nav-bar').addClass('scrolled-bottom');
-      $('#top-nav-bar').removeClass('scrolled-mid');
+      $('#top-nav-bar').addClass('scrolled-contact');
+      $('#top-nav-bar').removeClass('scrolled-title scrolled-about scrolled-projects');
+    } else  if($(window).scrollTop() >= $('#contact').offset().top) {
+      $('#top-nav-bar').addClass('scrolled-contact');
+      $('#top-nav-bar').removeClass('scrolled-title scrolled-about scrolled-projects');
+    } else  if($(window).scrollTop() >= $('#projects').offset().top) {
+      $('#top-nav-bar').addClass('scrolled-projects');
+      $('#top-nav-bar').removeClass('scrolled-title scrolled-about scrolled-contact');
+    } else  if($(window).scrollTop() >= $('#about').offset().top) {
+      $('#top-nav-bar').addClass('scrolled-about');
+      $('#top-nav-bar').removeClass('scrolled-title scrolled-projects scrolled-contact');
+    } else  if($(window).scrollTop() > 0) {
+      $('#top-nav-bar').addClass('scrolled-title');
+      $('#top-nav-bar').removeClass('scrolled-about scrolled-projects scrolled-contact');
     } else {
-      $('#top-nav-bar').removeClass('scrolled-bottom');
+      $('#top-nav-bar').removeClass('scrolled-title scrolled-about scrolled-projects scrolled-contact');
     };
-
   });
+
+
+
+
 
 
   // Enable smooth scrolling for each same-page anchor
