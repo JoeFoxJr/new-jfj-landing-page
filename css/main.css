@@ -401,6 +401,7 @@ hr {
 .link-bar-projects {
   position: relative;
   bottom: 50px;
+  pointer-events: none;
 }
 
 /* ********** panels ********** */
