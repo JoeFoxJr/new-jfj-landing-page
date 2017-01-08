@@ -33,11 +33,11 @@ a {
 }*/
 
 a.hover-blue {
-  color: #44BBFF;
+  color: #82D1FF;
   transition: all 0.3s ease;
 }
 a.hover-blue:hover {
-  color: #82D1FF;
+  color: #44BBFF;
 }
 
 a.hover-pink {
