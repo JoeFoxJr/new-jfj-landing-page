@@ -238,47 +238,76 @@ hr {
   border-radius: 32px;
   background-color: white;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .link-bar-resume:hover {
   background-color: #66CC99;
   color: white;
-  border: 1px solid white;
+  border-color: white;
 }
 
 .link-bar-strava {
   height: 64px;
   width: 64px;
   position: relative;
-  top: 38px;
+  top: 39px;
   background-repeat: no-repeat;
   background-image: url('../img/brand-icons/svg/strava-icon-black-on-white.svg');
 }
 
 .link-bar-strava:hover {
   background-image: url('../img/brand-icons/svg/strava-icon-white-on-orange.svg');
-  border: 1px solid #fc4c02;
+  border-color: #fc4c02;
 }
 
 .link-bar-linkedin:hover {
   background-color: #0077b5;
   color: white;
-  border: 1px solid white;
+  border-color: white;
 }
 
 .link-bar-instagram:hover {
   background-color: #e1306c;
   color: white;
-  border: 1px solid white;
+  border-color: white;
 }
 
 .link-bar-twitter:hover {
   background-color: #1da1f2;
   color: white;
-  border: 1px solid white;
+  border-color: white;
 }
 
+.link-bar-github:hover {
+  background-color: #4078c0;
+  color: white;
+  border-color: white;
+}
+
+.link-bar-codecademy {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  top: 39px;
+  background-repeat: no-repeat;
+  background-image: url('../img/brand-icons/svg/codecademy-icon-black.svg');
+  background-size: 60%;
+  background-position: center center;
+}
+
+.link-bar-codecademy:hover {
+  background-image: url('../img/brand-icons/svg/codecademy-icon-white.svg');
+  border-color: #34B3A0;
+  background-color: #34B3A0;
+
+}
+
+.link-bar-email:hover {
+  background-color: #FC575E;
+  color: white;
+  border-color: white;
+}
 
 /* ********** panels ********** */
 .panel {
@@ -346,7 +375,7 @@ hr {
   background-position: center center;
   background-attachment: fixed;
   height: 100vh;
-  min-height: 600px;
+  min-height: 900px;
 }
 
 #projects .panel-contents {
@@ -361,6 +390,17 @@ hr {
   display: inline-block;
   line-height: 1.5;
   font-size: 15px;
+}
+
+#projects ul {
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 15%;
+  font-family: 'Lora', serif;
+}
+
+#projects ul li {
+  padding-top: 10px;
 }
 
 #contact {
@@ -429,7 +469,7 @@ hr {
 #footer-codecademy {
   height: 30px;
   width: 30px;
-  margin-top: 24px;
+  margin-top: 25px;
   margin-left: 17px;
   margin-right: 17px;
   background-repeat: no-repeat;

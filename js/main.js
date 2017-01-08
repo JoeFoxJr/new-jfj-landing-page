@@ -7,26 +7,6 @@ $(document).ready(function() {
 
   // Add class to #top-nav-bar upon scrolling
   // Note: I need to execute this on window.load, resize, or scroll
-  // $(window).scroll(function() {
-
-  //   if ($(window).scrollTop() > 1) {
-  //     $('#top-nav-bar').addClass('scrolled-mid');
-  //     $('#top-link-bar').addClass('scrolled-mid');
-  //   } else {
-  //     $('#top-nav-bar').removeClass('scrolled-mid');
-  //     $('#top-link-bar').removeClass('scrolled-mid');
-  //   };
-
-  //   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-  //     $('#top-nav-bar').addClass('scrolled-bottom');
-  //     $('#top-nav-bar').removeClass('scrolled-mid');
-  //   } else {
-  //     $('#top-nav-bar').removeClass('scrolled-bottom');
-  //   };
-
-  // });
-
-
   $(window).scroll(function() {
     if($(window).scrollTop() + $(window).height() == $(document).height()) {
       $('#top-nav-bar').addClass('scrolled-contact');
