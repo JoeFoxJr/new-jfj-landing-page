@@ -35,6 +35,14 @@ a.underline {
   text-decoration: underline;
 }
 
+a.hover-blue:hover {
+  color: #44BBFF;
+}
+
+a.hover-pink:hover {
+  color: #FC575E;
+}
+
 hr {
     display: block;
     margin-top: 0.5em;
