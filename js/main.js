@@ -1,13 +1,8 @@
 
 $(document).ready(function() {
 
-  // add horiz rule to each panel title
-  jQuery(".panel-title").append("<hr />");
-
-
-  // Add class to #top-nav-bar upon scrolling
-  // Note: I need to execute this on window.load, resize, or scroll
-  $(window).scroll(function() {
+  // Add class to #top-nav-bar upon load, resize, or scroll
+  $(window).on('load resize scroll', function() {
     if($(window).scrollTop() + $(window).height() == $(document).height()) {
       $('#top-nav-bar').addClass('scrolled-contact');
       $('#top-nav-bar').removeClass('scrolled-title scrolled-about scrolled-projects');
@@ -28,23 +23,25 @@ $(document).ready(function() {
     };
   });
 
-
-
-
-
-
   // Enable smooth scrolling for each same-page anchor
   $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
     }
-    });
-
+  });
 });
+
+
+
+
+
+
+
+
 
 
 

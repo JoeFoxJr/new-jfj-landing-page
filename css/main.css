@@ -26,11 +26,6 @@ a {
   color: inherit;
 }
 
-a:hover {
-  text-decoration:none;
-  color: inherit;
-}
-
 a.underline {
   text-decoration: underline;
 }
@@ -243,7 +238,7 @@ hr {
   width: 64px;
   font-size: 40px;
   line-height: 64px;
-  border-radius: 32px;
+  border-radius: 50%;
   background-color: white;
   color: black;
   border: 2px solid black;
@@ -262,11 +257,14 @@ hr {
   top: 39px;
   background-repeat: no-repeat;
   background-image: url('../img/brand-icons/svg/strava-icon-black-on-white.svg');
+  background-size: 140%;
+  background-position: center center;
 }
 
 .link-bar-strava:hover {
   background-image: url('../img/brand-icons/svg/strava-icon-white-on-orange.svg');
   border-color: #fc4c02;
+  border: 2px solid white;
 }
 
 .link-bar-linkedin:hover {
