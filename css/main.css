@@ -259,7 +259,7 @@ hr {
 }
 
 #main-title-description p:hover .hidden {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 
