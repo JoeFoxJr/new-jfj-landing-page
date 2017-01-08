@@ -33,6 +33,34 @@ $(document).ready(function() {
       }, 1000);
     }
   });
+
+
+  // Toggle 'hidden' class on the top link-bar-hover-text
+  $('.link-bar-resume').on('mouseenter mouseleave',function(){
+    $('.link-bar-hover-resume').toggleClass('hidden');
+  });
+  $('.link-bar-strava').on('mouseenter mouseleave',function(){
+    $('.link-bar-hover-strava').toggleClass('hidden');
+  });
+  $('.link-bar-linkedin').on('mouseenter mouseleave',function(){
+    $('.link-bar-hover-linkedin').toggleClass('hidden');
+  });
+  $('.link-bar-instagram').on('mouseenter mouseleave',function(){
+    $('.link-bar-hover-instagram').toggleClass('hidden');
+  });
+  $('.link-bar-twitter').on('mouseenter mouseleave',function(){
+    $('.link-bar-hover-twitter').toggleClass('hidden');
+  });
+  $('.link-bar-github').on('mouseenter mouseleave',function(){
+    $('.link-bar-hover-github').toggleClass('hidden');
+  });
+  $('.link-bar-codecademy').on('mouseenter mouseleave',function(){
+    $('.link-bar-hover-codecademy').toggleClass('hidden');
+  });
+  $('.link-bar-email').on('mouseenter mouseleave',function(){
+    $('.link-bar-hover-email').toggleClass('hidden');
+  });
+
 });
 
 
