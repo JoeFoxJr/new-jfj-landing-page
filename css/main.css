@@ -65,16 +65,20 @@ hr {
 }
 
 #top-nav-bar.scrolled-title {
-  background-color: #44BBFF; /* For browsers that do not support gradients */
+  background-color: #66CC99; /* For browsers that do not support gradients */
 /*  background: -webkit-linear-gradient(left, #44BBFF , #66c7ff); /* For Safari 5.1 to 6.0 */
 /*  background: -o-linear-gradient(right, #44BBFF, #66c7ff); /* For Opera 11.1 to 12.0 */
 /*  background: -moz-linear-gradient(right, #44BBFF, #66c7ff); /* For Firefox 3.6 to 15 */
 /*  background: linear-gradient(to right, #44BBFF , #66c7ff); /* Standard syntax */
-  color: #F0F1F5;
+  color: white;
+}
+
+.top-nav-bar-item:hover {
+  color: #44BBFF;
 }
 
 #top-nav-bar.scrolled-about {
-  background-color: #66CC99;
+  background-color: #44BBFF;
   color: white;
 }
 
@@ -119,10 +123,6 @@ hr {
   padding-right: 15px;
   margin-left: 4px;
   margin-right: 4px;
-}
-
-.top-nav-bar-item:hover {
-  color: #44BBFF;
 }
 
 #top-nav-bar-dropdown-button {
