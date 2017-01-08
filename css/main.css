@@ -12,6 +12,7 @@
   font-family: 'Raleway', sans-serif;
 */
 
+
 /* ********** body ********** */
 body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -50,6 +51,7 @@ hr {
 #top {
   display: none;
 }
+
 
 /* ********** top nav bar ********** */
 #top-nav-bar {
@@ -207,6 +209,8 @@ hr {
   display: inline-block;
 }
 
+
+/* ********** link bars ********** */
 #top-link-bar {
   margin-left: auto;
   margin-right: auto;
@@ -235,6 +239,22 @@ hr {
   color: black;
   border: 1px solid black;
 }
+
+.link-bar-strava {
+  height: 64px;
+  width: 64px;
+/*  margin-top: 24px;
+  margin-left: 17px;
+  margin-right: 17px;*/
+  background-repeat: no-repeat;
+  background-image: url('../img/brand-icons/svg/strava-icon-black-on-white.svg');
+}
+
+.link-bar-strava:hover {
+  background-image: url('../img/brand-icons/svg/strava-icon-blue-on-orange.svg');
+}
+
+
 
 /* ********** panels ********** */
 .panel {
@@ -378,11 +398,11 @@ hr {
   margin-left: 17px;
   margin-right: 17px;
   background-repeat: no-repeat;
-  background-image: url('../img/brand-icons/svg/strava-icon-grey-on-blue.svg');
+  background-image: url('../img/brand-icons/svg/strava-icon-blue-on-grey.svg');
 }
 
 #footer-strava:hover {
-  background-image: url('../img/brand-icons/svg/strava-icon-orange-on-blue.svg');
+  background-image: url('../img/brand-icons/svg/strava-icon-blue-on-orange.svg');
 }
 
 #footer-codecademy {
@@ -399,19 +419,19 @@ hr {
   background-image: url('../img/brand-icons/svg/codecademy-icon-green.svg');
 }
 
-.fa-linkedin:hover {
+#footer .fa-linkedin:hover {
   color: #0077b5;
 }
 
-.fa-instagram:hover {
+#footer .fa-instagram:hover {
   color: #e1306c;
 }
 
-.fa-twitter:hover {
+#footer .fa-twitter:hover {
   color: #1da1f2;
 }
 
-.fa-github:hover {
+#footer .fa-github:hover {
   color: #4078c0;
 }
 
