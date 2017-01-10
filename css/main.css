@@ -33,7 +33,7 @@ a {
 }*/
 
 a.hover-blue {
-  color: #82D1FF;
+  color: #ABE0FF; /* made this two steps lighter */
   transition: all 0.3s ease;
 }
 a.hover-blue:hover {
